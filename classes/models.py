@@ -1,7 +1,7 @@
 from django.db import models
 # Create your models here.
 class Class(models.Model):
-      class_name= models.CharField(max_length=20).primary_key
+      class_name= models.CharField(max_length=20)
       class_id = models.PositiveSmallIntegerField()
       names_of_teachers = models.TextField()
       number_of_enrolled_students = models.PositiveSmallIntegerField()
