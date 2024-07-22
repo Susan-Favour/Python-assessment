@@ -4,7 +4,7 @@ class Courses(models.Model):
     course_name = models.CharField(max_length = 20).primary_key
     course_id = models.SmallIntegerField()
     department = models.CharField(max_length = 20)
-    course_discription = models.TextField()
+    course_description = models.TextField()
     class_starting_time = models.TimeField(00, 00, 00)
     course_instructor = models.CharField(max_length = 28)
     number_of_students = models.PositiveSmallIntegerField()
