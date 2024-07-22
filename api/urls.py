@@ -4,6 +4,7 @@ from .views import ClassroomPeriodListView
 from .views import ClassRoomListView
 from .views import CoursesListView
 from .views import TeacherListView
+from .views import StudentDetailView
 urlpatterns = [
     path(
         "students/",StudentListViews.as_view(),name="student_list_view"
@@ -19,5 +20,8 @@ urlpatterns = [
     ),
     path(
         "teachers/", TeacherListView.as_view(), name="teachers_list_view"
+    ),
+    path(
+        "students/<int:id>/", StudentDetailView.as_view(),name = "student_detail_view"
     )
 ]
